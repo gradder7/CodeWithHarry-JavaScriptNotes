@@ -105,6 +105,7 @@ console.log(arr9);
 //find index()=> it will return the index of find element if not found return -1
 //filter() => tries to find all the entries which matches the criteria.
 
+///================
 //array of objects
 const arrObj=[
     {
