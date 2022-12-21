@@ -1,4 +1,5 @@
 //options is an object
+
 // let options={
 //     method:'POST',
 //     headers:{
@@ -13,7 +14,7 @@
 // //to make a post request we need to use the fetch api options
 // fetch('https://jsonplaceholder.typicode.com/posts',options)
 
-//   .then((response) => response.json())
+//   .then((response) =>response.json());
 //   .then((json) => console.log(json));
 
 
@@ -33,7 +34,7 @@ const details=async()=>{
     //make a promise
     let p =await fetch('https://jsonplaceholder.typicode.com/posts',options);
     //wait until the load of url
-    let response= await p.json();
+    let response= await p.json(); // this is a promise p.json will be apromise
     //return a promise
     return response;
 }
