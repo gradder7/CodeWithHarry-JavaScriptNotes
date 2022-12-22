@@ -53,22 +53,22 @@ async function weather(){
 }
 
 //this function runs paralley with the async function
-const cherry=()=>{
-    console.log('i am cherry');
-}
+// const cherry=()=>{
+//     console.log('i am cherry');
+// }
 
-console.log('Welcome to weather controll room=>')
-//weather() is returning a promise we can see doing log.
-let a=weather();
-//function will run paralley
-let b=cherry();
-console.log(a);
-a.then((value)=>{
-    console.log(value);
-})
+// console.log('Welcome to weather controll room=>')
+// //weather() is returning a promise we can see doing log.
+// let a=weather();
+// //function will run paralley
+// let b=cherry();
+// console.log(a);
+// a.then((value)=>{
+//     console.log(value);
+// })
 
 
-//demostration of asyn/await
+// // demostration of asyn/await
 // const cherry1= async()=>{
 //     console.log('i am cherry');
 // }

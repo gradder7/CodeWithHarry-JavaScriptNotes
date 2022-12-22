@@ -5,7 +5,7 @@ setTimeout(()=>{
 //throw error and rest code will not execute
 // console.log(rahul);
 
-//to hadle error we use try..catch
+//to hadle error we use try...catch
 //try first execute
 //if there is not error,than catch ignored else catch will execute and all rest code will also execute,
 //try catch works synchronusly

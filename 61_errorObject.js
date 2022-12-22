@@ -1,5 +1,5 @@
 //error object => have some properties
-//like name,messgae stack we can print it in cath using error object
+//like name,messgae stack we can print it in catch using error object
 //we can gthrow the custome errors also using the throw 
 try {
     //it will throw error so we are handling it
