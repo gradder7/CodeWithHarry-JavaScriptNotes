@@ -57,6 +57,7 @@ while(num>0){
     aArray.push(num);
     num--;
 }
+
 let factorial_num=aArray.reduce((a,b)=>{
     return a*b;
 })
