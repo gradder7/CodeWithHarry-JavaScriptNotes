@@ -31,6 +31,8 @@ class RailwayForm1 {
   }
   cancle() {
     console.log(this.name + " cancled", "trainNumber=>", this.tnum);
+    //reset value of cancle
+    this.tnum=0;
   }
 }
 

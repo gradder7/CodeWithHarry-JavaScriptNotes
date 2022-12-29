@@ -16,6 +16,7 @@
 //Methods like call(), apply(), and bind() can refer this to any object.
 class RailwayForm {
   //always calls when we create an new object
+  //if you dont provide a constructor to class than a default constructor will be called.
   constructor(name1, tnum) {
     console.log("i am a constuctor"+' given name '+name1+' '+'train numberv '+tnum);
     this.name = name1;
