@@ -1,4 +1,7 @@
 class Employee {
+  constructor(name){
+    this.name=name;
+  }
   login() {
     console.log(`Employee has loged in`);
   }
@@ -12,8 +15,9 @@ class Employee {
 }
 
 class Programmer extends Employee {
-  requestCoffe(x) {
-    console.log(`${name} has requested coffies ${x}`);
+  requestCoffe(x,name) {
+    this.name=name;
+    console.log(`${this.name} has requested coffies ${x}`);
   }
 
   // we have ovverrided the method of the parent class to use it as child defined method only not by parent
@@ -39,3 +43,4 @@ let e1 = new Programmer();
 e1.login();
 e1.requestLeaves(3);
 e1.logout();
+e1.requestCoffe(5,'akhil');
