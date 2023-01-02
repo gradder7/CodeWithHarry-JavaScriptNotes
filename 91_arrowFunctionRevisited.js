@@ -1,4 +1,4 @@
-//arrow functions
+//arrow functions(())=>{}
 //
 
 // const sayHello=()=>{
@@ -52,6 +52,8 @@ const x = {
 };
 
 x.showDetails();
+
+
 
 //lexical this
 // As you probably know, when you define a function and use a variable inside of it, 
