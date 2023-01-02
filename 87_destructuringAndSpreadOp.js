@@ -7,8 +7,8 @@ let [a, b, c, d, ...rest] = arr;
 // let a=arr[0];
 // let b=arr[1];
 
-//if you give the variable name but not assign the vaule than it wikl be undefined
-//first thge vaules will be assigned to varaible than,
+//if you give the variable name but not assign the vaule than it will be undefined
+//first the vaules will be assigned to varaible than,
 //the rest values which do not have varaible assign
 //rest will makes an array in log.
 console.log(a, b, c, d, rest);
