@@ -53,6 +53,7 @@ const x = {
 
 x.showDetails();
 
+//lexical this
 // As you probably know, when you define a function and use a variable inside of it, 
 //it checks if the variable has been defined in its scope. If it is, it uses it! If not,
 // it checks the enclosing scope for that variable definition. 
