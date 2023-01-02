@@ -5,6 +5,7 @@
 //     console.log('hello');
 // }
 
+
 //we can also write it without {} if its a single line
 // const sayHello = (name) => console.log("hello",name);
 
@@ -12,11 +13,13 @@
 //if we have two paraments than we have to use the brackets()
 const sayHello = (name) => console.log("hello", name);
 
+
 //i can also write this way
 const sayHelloAll = () => console.log("hello");
 console.log("himanshu");
 
 sayHello("Pihu");
+
 sayHelloAll();
 
 const x = {
@@ -49,7 +52,6 @@ const x = {
 };
 
 x.showDetails();
-
 
 // As you probably know, when you define a function and use a variable inside of it, 
 //it checks if the variable has been defined in its scope. If it is, it uses it! If not,
