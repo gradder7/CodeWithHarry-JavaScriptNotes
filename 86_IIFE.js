@@ -20,7 +20,7 @@ let a = async () => {
   let d = await a();
   console.log(d);
 
-  //if i do this it will wait all to resilve
+  //if i do this it will wait all to resolve
   // console.log(b,c,d);
 
   //using this it will not wait for one to fullfill first

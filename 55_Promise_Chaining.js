@@ -11,12 +11,12 @@ let p1=new Promise((resolve,reject)=>{
 
 p1.then((value)=>{
     console.log('value is=>'+value);
-    //we can make prome inside then() also
-    //assigning a varaible
+    //we can make promise inside then() also
+    //1=>assigning a varaible
     let p2= new Promise((resolve,reject)=>{
 
         //first the p1 promise will execute after 5 sec and than print and for 
-        //this setTimeOut wait for again3 sec and then execute all
+        //this setTimeOut wait for again 3 sec and then execute all
         setTimeout(()=>{
          resolve(10);
         },3000)

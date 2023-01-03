@@ -34,7 +34,7 @@ let p2= new Promise((resolve,reject)=>{
     console.log('i am pending'); 
     setTimeout(()=>{
         console.log('i am a promise and i am rejected');
-        reject(new Error('i am promise error '));
+            
     },5000)
 })
 
