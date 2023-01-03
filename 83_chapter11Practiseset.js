@@ -17,6 +17,7 @@ class Complex {
   get getReal() {
     return this.real;
   }
+
   set setReal(x) {
     this.real = x;
   }
@@ -33,7 +34,7 @@ class Complex {
 let a = new Complex(2, 4);
 let b = new Complex(3, 4);
 
-//here i am passing object as an argument
+//here i am passing object as an argument.
 a.add(b);
 console.log(a.real, a.imagnery);
 
@@ -44,6 +45,7 @@ a.setReal=1;
 a.setImagenery=2;
 console.log("real number=>", a.getReal);
 console.log("Imaginary number=>", a.getImagenery);
+
 
 //-----------------------------------------//
 //3> create a class student and human override a method to se changes
