@@ -44,7 +44,7 @@ a.setImagenery=2;
 console.log("real number=>", a.getReal);
 console.log("Imaginary number=>", a.getImagenery);
 
-//-------------------------------------------//
+//-----------------------------------------//
 //3> create a class student and human override a method to se changes
 class Human {
   constructor(name, favFood) {
