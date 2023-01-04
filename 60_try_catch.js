@@ -5,7 +5,7 @@ setTimeout(()=>{
 //throw error and rest code will not execute
 // console.log(rahul);
 
-//to hadle error we use try...catch
+//to handle error we use try...catch
 //try first execute
 //if there is not error,than catch ignored else catch will execute and all rest code will also execute,
 //try catch works synchronusly
@@ -18,7 +18,7 @@ setTimeout(()=>{
 //try catch works synchronusly
 //if exception happens in scheduled code than try cath wont work like setTimeout
 //here the try will execute first and set time will throws in backgrond to execute in time
-//now try is execute due to synconus nature and if scheduled code throws error than it wont catch but rest code will execute
+//now try is execute due to syncronus nature and if scheduled code throws error than it wont catch but rest code will execute
 //but inside of setTime out we can use try catch it will work.
 try {
     setTimeout(()=>{
