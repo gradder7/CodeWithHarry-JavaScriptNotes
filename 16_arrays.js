@@ -56,6 +56,7 @@ console.log(j.concat(k,l)); //return a new joined array
 
 //sort()-> sort aplhabetically
 //assumne the whole array elemnts as string and than sort acc. to alphabetically
+//chnage the orignal array
  let s=[10000000,400,22,222,33,3,345,767,989,334,324234234];
  console.log(s.sort());
  //so we have to sort we use compare function

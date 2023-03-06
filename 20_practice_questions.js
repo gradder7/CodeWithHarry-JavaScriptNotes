@@ -41,7 +41,6 @@ let newArr2=arr2.map((value)=>{
 console.log(newArr2);
 
 //find factorial using reduce
-
 let arr3=[1,2,3,4,5]
 const fact=(a,b)=>{
     return a*b;

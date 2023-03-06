@@ -3,7 +3,7 @@ for(let i=0;i<arr.length;i++){
     console.log(arr[i]);
 }
 
-//forEach loop
+//forEach loop chnage existing array
 let arr1=[1,2,3,4,5];
 arr1.forEach(element => {
     console.log(element*element);
@@ -83,7 +83,7 @@ console.log(arr7);
 // console.log(arr7);
 
 
-//reduce()-> it resuce the array to a single value and do not change the orignal array
+//reduce()-> it reduce the array to a single value and do not change the orignal array
 //it takes 3 arguments -> acumulator,value,index and we can ssign defalut value to accumulator also
 let arr8=[10,20,30,40,50];
 let arr9=arr8.reduce((a,b)=>{

@@ -11,9 +11,8 @@ let fullName=name3.concat(lname," is my full name");
 console.log(fullName);
 
 //trim
-let a="             b             ";
-console.log(a.trim()); 
-
+let a="b";
+console.log(a.trim());
 
 let str="hello";
 for(let i=0;i<str.length;i++){

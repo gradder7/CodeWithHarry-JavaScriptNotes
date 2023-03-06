@@ -3,7 +3,7 @@
 
 let arr = [2, 3, 4, 4, 4, 5, 6, 3, 23, 4, 5];
 let [a, b, c, d, ...rest] = arr;
-// //normally we do but we donot to do this now
+// //normally we do but we do not to do this now
 // let a=arr[0];
 // let b=arr[1];
 
