@@ -30,7 +30,7 @@ class RailwayForm {
 let harry = new RailwayForm();
 //fill details
 harry.fill("anshu",1121);
-//create the form for harry
+//create the form for ram
 let ram = new RailwayForm();
 //fill details
 ram.fill("ram",2213);

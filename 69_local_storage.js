@@ -29,7 +29,7 @@ console.log(localStorage.length);
 //it will give the key at the given position
 console.log(localStorage.key(0));
 
-//the key and value can onnly be string
+//the key and value can only be string
 //objects can also be stored in local storage
 //objects are converted to string using JSON.stringify
 //and than parse these to json again using JSON.parse

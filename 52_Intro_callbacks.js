@@ -5,7 +5,6 @@
 // let c=prompt(' enter age 3');
 // console.log(a,b,c);
 
-
 //asynchronous
 //initiate now but finish later
 
@@ -25,11 +24,9 @@
 // end
 // i am async
 
-
 //----------->callbacks<-----------
 //a function executes when something happens
 //
-
 
 //function to add an script in html
 function loadScript(src,callbacks) {
@@ -62,7 +59,7 @@ function loadScript(src,callbacks) {
 }
 
 //if i want to print this function when script load,
-//we pass this functiuon as an argument to the function 
+//we pass this functiuon as an argument to the function
 // which is than invoked inside the outer function to conplete action
 //we can also pass arguments in call back functions
 
@@ -82,3 +79,33 @@ function goodmorning(src){
 
 //script is added to the body=> see in console
 loadScript('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js',hello)
+
+// function loadScript(src, callback) {
+//   let script = document.createElement("script");
+//   script.src = src;
+//   script.onload = function () {
+//     console.log("loaded script", src);
+//     callback(null, src);
+//   };
+//   script.onerror = function () {
+//     console.log("script has some error", src);
+//     callback(new Error("script not found", src));
+//   };
+//   document.body.appendChild(script);
+// }
+
+// function hello(error, name) {
+//   if (error) {
+//     console.log(error);
+//     return;
+//   }
+//   alert("i am loaded" + " " + name);
+// }
+// function hello2() {
+//   alert("i am loaded now 2");
+// }
+
+// loadScript(
+//   "https://cdn.jselivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js",
+//   hello
+// );
