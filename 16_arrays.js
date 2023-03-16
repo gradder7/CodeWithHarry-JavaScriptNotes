@@ -73,7 +73,7 @@ console.log(j.concat(k,l)); //return a new joined array
  console.log(u.slice(0,4));// exclude the last index means 4
 
 
- //reverse()-> just reverse the whole array
+ //reverse()-> just reverse the whole array.
  let r=[1,2,3,4,5]
  console.log(r.reverse());
 
