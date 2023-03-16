@@ -17,7 +17,7 @@ document.querySelector(".this").style.color="red";
 
 
 //document.getElementsByTagName-> return the the given tag in collection of all 
-//shows all a elemnts
+//shows all a elements
 console.log(document.getElementsByTagName("a"));
 console.log(document.querySelector(".card").getElementsByTagName("a"));
 //we can go like this also
