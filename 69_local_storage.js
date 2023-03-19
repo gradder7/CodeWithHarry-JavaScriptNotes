@@ -16,7 +16,7 @@ if (key == "red" || key == "blue") {
   //remove the key with value
   localStorage.removeItem(key);
 }
-localStorage.removeItem(city);
+// localStorage.removeItem(city);
 
 if (key == "clear") {
   //it will clear all the local storage delete every thing
