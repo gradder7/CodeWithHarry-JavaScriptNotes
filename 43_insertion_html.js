@@ -1,6 +1,6 @@
 let a = document.getElementsByTagName("div")[0];
-//container div
-//return html collection
+// //container div
+// //return html collection
 // console.log(a);
 // console.log(a.innerHTML);
 // a.innerHTML=a.innerHTML+'<h1>hello iam head 1</h1>';

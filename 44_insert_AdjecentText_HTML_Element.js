@@ -2,7 +2,7 @@ let first = document.getElementById("first");
 // console.log(first);
 
 //beforeend=> insert at the end of the #first element. see console
-first.insertAdjacentHTML("beforeend", "<h1>hello i am before end</h/");
+first.insertAdjacentHTML("beforeend", "<h1>hello i am before end</h>");
 
 // //beforebegin=. this will be before the element.
 first.insertAdjacentHTML("beforebegin", "<h1>hello i am before begin</h>");

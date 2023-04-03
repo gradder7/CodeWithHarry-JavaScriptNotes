@@ -2,7 +2,7 @@ let name='himanshu';
 console.log(name.slice(2,4));// 4 willnot be included
 console.log(name.slice(2));// print til end from 2 index
 
-let name2 ="hello sir";
+let name2 ="hello sir sir";
 console.log(name2.replace("sir","himanhsu"))
 
 let name3= "himanshu";

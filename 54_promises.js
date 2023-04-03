@@ -22,21 +22,21 @@
 
 //the promise will be in pending state until time out
 //will execute paralley and will notify
-let p1= new Promise((resolve,reject)=>{
-    console.log('i am pending');
-    setTimeout(()=>{
-        console.log('i am a promise and i am resovlved');
-        resolve(true); //set the value of resolve
-    },5000)
-})
+let p1 = new Promise((resolve, reject) => {
+  console.log("i am pending");
+  setTimeout(() => {
+    console.log("i am a promise and i am resovlved");
+    resolve(true); //set the value of resolve
+  }, 5000);
+});
 
-let p2= new Promise((resolve,reject)=>{
-    console.log('i am pending'); 
-    setTimeout(()=>{
-        console.log('i am a promise and i am rejected');
-            
-    },5000)
-})
+let p2 = new Promise((resolve, reject) => {
+  console.log("i am pending");
+  setTimeout(() => {
+    console.log("i am a promise and i am rejected");
+    reject(new Error("Error in load"));
+  }, 2000);
+});
 
 // console it will print
 // Promise {<pending>} // when executed the pending will be fullfilled or rejected and state also
@@ -44,7 +44,6 @@ let p2= new Promise((resolve,reject)=>{
 // [[PromiseState]]: "pending" // change when executed
 // [[PromiseResult]]: undefined //change when execute
 console.log(p1);
-
 
 // console it will print
 // Promise {<pending>} // when executed the pending will be fullfilled or rejected and state also
@@ -56,10 +55,10 @@ console.log(p2);
 //.then(value)=> i want to do some work when p1 complete
 //resolve value will be there
 //to get the value
-p1.then((value)=>{
-    //it will print the vaule of p1 after p1 execution
-    console.log(value); 
-})
+p1.then((value) => {
+  //it will print the vaule of p1 after p1 execution
+  console.log(value);
+});
 
 //we can pass two funnctions also
 //promise.then(function(value){...},
@@ -70,9 +69,9 @@ p1.then((value)=>{
 //reject error is there
 //error handele
 //to get the error
-p2.catch((error)=>{
-    console.log('there is some error');
-})
+p2.catch((error) => {
+  console.log(error);
+});
 
 //we can also take value and handle error using then()
 // p2.then((value)=>{

@@ -11,45 +11,43 @@
 //     console.log(value);
 // })
 
+async function weather() {
+  let delhiWeather = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("27 degree");
+    }, 2000);
+  });
 
+  let lohaghatWeather = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("-15 degree");
+    }, 5000);
+  });
+  console.log("he");
 
-async function weather(){
+  //using then we can recive the value of the promises
+  // delhiWeather.then((value)=>{
+  //     alert(value)
+  // })
 
-    let delhiWeather=new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("27 degree");
-        },2000)
-    })
+  // lohaghatWeather.then((value)=>{
+  //     alert(value)
+  // })
 
-    let lohaghatWeather=new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve("-15 degree");
-        },5000)
-    })
+  //we can take the weather in varaible
+  //await=> wait until the promise is fullfilled
+  //it stops the function execution until promise is fullfilled.
+  console.log("feetching delhi weather......");
+  let delhiW = await delhiWeather;
+  console.log("delhi weather=>", delhiW);
 
-    //using then we can recive the value of the promises
-    // delhiWeather.then((value)=>{
-    //     alert(value)
-    // })
+  //logahat weather
+  console.log("feetching lohaghat weather......");
+  let lghtW = await lohaghatWeather;
+  console.log("Lohaghat weather=>", lghtW);
 
-    // lohaghatWeather.then((value)=>{
-    //     alert(value)
-    // })
-
-    //we can take the weather in varaible 
-    //await=> wait until the promise is fullfilled
-    //it stops the function execution until promise is fullfilled.
-    console.log('feetching delhi weather......')
-    let delhiW=await delhiWeather;
-    console.log('delhi weather=>',delhiW)
-    
-    //logahat weather
-    console.log('feetching lohaghat weather......')
-    let lghtW=await lohaghatWeather;
-    console.log('Lohaghat weather=>',lghtW)
-
-    //return the resolve value of weather in array form
-    return[delhiW,lghtW];
+  //return the resolve value of weather in array form
+  return [delhiW, lghtW];
 }
 
 //this function runs paralley with the async function
@@ -67,7 +65,6 @@ async function weather(){
 //     console.log(value);
 // })
 
-
 // // demostration of asyn/await
 // const cherry1= async()=>{
 //     console.log('i am cherry');
@@ -75,7 +72,7 @@ async function weather(){
 
 // const allRun=async ()=>{
 // console.log('Welcome to weather controll room=>')
-// //a have value 
+// //a have value
 // let a= await weather();
 // //cherry1 will execute at last as it will wait for a to fullfilled
 // let b=await cherry1();

@@ -63,6 +63,16 @@ function loadScript(src,callbacks) {
 // which is than invoked inside the outer function to conplete action
 //we can also pass arguments in call back functions
 
+// function greeting(name) {
+//   console.log("My name is ", name);
+//   // alert(`${name}`);
+// }
+
+// function getDataFromUser(callback) {
+//   const name = prompt("enter your name!");
+//   callback(name);
+// }
+// getDataFromUser(greeting);
 //error will be passed with src
 function hello(error,src){
     //if error than print error

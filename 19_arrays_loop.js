@@ -34,7 +34,7 @@ let arr4=[20,40,50,60,70];
 //it will give me values
 arr4.map((value)=>{
     console.log(value);
-})
+})  
 
 //we can add value , index and arr in it
 let arr5=arr4.map((value,index,arr4)=>{

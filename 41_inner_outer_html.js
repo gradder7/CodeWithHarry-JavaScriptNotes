@@ -1,4 +1,4 @@
-let x= document.getElementsByTagName('span')[0];
+let x = document.getElementById("text");
 console.log(x);
 
 //it shows element as an object
